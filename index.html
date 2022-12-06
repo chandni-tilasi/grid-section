@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>grid section</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Rubik', sans-serif;
+
+        }
+
+        body{
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        .gd {
+
+            background-color: rgb(0, 73, 0);
+
+
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .box1 {
+            grid-column: 1/3;
+            background-color: rgb(93, 0, 93);
+        }
+
+        .box2 {
+            background-color: rgb(0, 73, 0);
+        }
+
+        .box3 {
+            background-color: rgb(226, 157, 157);
+        }
+
+        .box5 {
+            grid-column: 2/4;
+            background-color: brown;
+        }
+
+        .box3 {
+            grid-area: 1/4/3/5;
+        }
+
+        .box1-cont h4 {
+            margin-top: 5%;
+            margin-bottom: 4%;
+            color: white;
+        }
+
+        img {
+            height: 30px;
+            width: 28px;
+            border-radius: 10px;
+            margin-right: 1.5%;
+        }
+
+        .header-sec {
+            display: flex;
+            height: 20%;
+        }
+
+        .text h4,
+        p {
+            padding: 0;
+            margin: 0;
+            color: white;
+
+        }
+
+        .box1-cont {
+            padding: 5%;
+            padding-top: 3%;
+        }
+
+        .box3 p,
+        h4 {
+            color: black;
+        }
+
+        #quote {
+            margin-left: 50%;
+            width: 10%;
+            height: 20%;
+            margin-top: 0%;
+
+        }
+
+
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            .box1-cont h4 {
+                margin-top: 4%;
+                margin-bottom: 3%;
+                color: white;
+            }
+
+            #quote {
+                margin-left: 30%;
+                /* width: 10%; */
+                height: 20%;
+                margin-top: 0%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box1 gd ">
+            <div class="box1-cont">
+                <div class="header-sec bgimage">
+                    <img src="https://img.freepik.com/premium-photo/portrait-young-smiling-woman_53419-5924.jpg?w=2000" alt="">
+                    <div class="text">
+                        <h4>Daniel Cliffort</h3>
+                            <p>Verfied Graduate</p>
+                    </div>
+                    <img id="quote" src="bg-pattern-quotation.jpg">
+                </div>
+
+                <h4>I received a job offer mid-course, and the subjects learned
+
+                    were current, if not more so, in the company I joined.
+
+                    honestly feel got every penny's worth.</h4>
+                <p>
+                    "I was EMT for many years before i joined the bootcamp. i have been looking to make a transition and
+                    have heard some people who had an amazing experience here. I signed uo for the free intro course and
+                    found incedibly fun! i enrolled shortly thereafter . The next 12 week was the best and most
+                    grueling-time of my life. "
+                </p>
+
+            </div>
+        </div>
+        <div class="box2 gd ">
+            <div class="box1-cont">
+                <div class="header-sec">
+                    <img src="https://media.istockphoto.com/id/1299077582/photo/positivity-puts-you-in-a-position-of-power.jpg?b=1&s=170667a&w=0&k=20&c=4M8qWKQ6fB-Er_BDhhM80IkV6ShVLIttCaA4P__B2j0=" alt="">
+                    <div class="text">
+                        <h4 style="color: white;">Jonathan Walters</h4>
+                        <p>Varified Graduate</p>
+                    </div>
+                </div>
+                <h4>The team was very supportive and kept me motivated</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet repudiandae quas
+                    consequuntur fugiat pariatur !</p>
+
+            </div>
+
+
+
+        </div>
+        <div class="box3 gd ">
+            <div class="box1-cont">
+                <div class="header-sec">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmndPZxBqqWZJlLQExa6owA8xJply9Syzfg&usqp=CAU" alt="">
+                    <div class="text">
+                        <h4 style="color: black;">Kira Whittle</h4>
+                        <p style="color: black;"> Varified Graduate </p>
+                    </div>
+                </div>
+                <h4 style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto id dicta
+                    reprehenderit nobis
+                    adipisci.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet repudiandae quas
+                    consequuntur fugiat pariatur veritatis nesciunt! Sed labore ullam ea rerum explicabo non corporis
+                    voluptatem delectus nam neque unde dolorum, architecto natus aut possimus recusandae laudantium
+                    nostrum eos nihil, asperiores sit provident vel. Doloremque quaerat ad tempora iusto temporibus quod
+                    voluptas soluta vel at aperiam odit in, voluptatum repellendus
+                    adipisicing elit. Sit recusandae, velit sed distinctio reiciendis omnis illo, fugit culpa iste a
+                    harum earum veniam eaque sint nobis reprehenderit voluptate non iusto impedit praesentium magnam.
+                    ipsum est Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sunt voluptates doloremque
+                    nobis possimus adipisci totam iure itaque officia numquam!
+                    officiis quae quod aut dolorem quisquam aliquam illo earum, autem velit distinctio aspernatur facere
+                    dolore natus similique maiores! Sit sunt similique labore dignissimos nulla! Ducimus minus hic non
+                    quo repellendus corrupti accusantium temporibus, nobis, suscipit sint harum dignissimos quae tempore
+                    magni perferendis nam, incidunt sapiente consequatur vel recusandae odit! Impedit, recusandae
+                    doloribus. </p>
+
+            </div>
+
+        </div>
+        <div class="box4 gd ">
+            <div class="box1-cont">
+                <div class="header-sec">
+                    <img src="https://miro.medium.com/max/650/0*97e7zotsjpsvt4Ek.jpg" alt="">
+                    <div class="text">
+                        <h4>Jeanette Harmon</h3>
+                            <p>Varified Graduate</p>
+                    </div>
+                </div>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto id dicta reprehenderit nobis
+                    adipisci.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet repudiandae quas
+                    consequuntur fugiat pariatur veritatis nesciunt! Sed labore ullam ea rerum explicabo non corporis
+                    voluptatem delectus nam neque unde dolorum, architecto natus aut possimus recusandae laudantium
+                    nostrum eos nihil, asperiores sit provident vel. Doloremque quaerat
+                    facilis illum blanditiis hic atque error assumenda eum autem veritatis quis culpa odio. Rem sint
+                    iure iste reprehenderit fugit ad veritatis corporis ut omnis!</p>
+
+            </div>
+
+        </div>
+        <div class="box5 gd ">
+            <div class="box1-cont">
+                <div class="header-sec">
+                    <img src="https://us.123rf.com/450wm/fizkes/fizkes2001/fizkes200101262/fizkes200101262.jpg?ver=6" alt="">
+                    <div class="text">
+                        <h4>Patrick Abrams</h3>
+                            <p>Varified Graduate</p>
+                    </div>
+                </div>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iusto id dicta reprehenderit nobis
+                    adipisci.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit amet repudiandae quas
+                    consequuntur fugiat pariatur veritatis nesciunt! Sed labore ullam ea rerum explicabo non corporis
+                    voluptatem delectus nam neque unde dolorum, architecto natus aut possimus recusandae laudantium
+                    nostrum eos nihil, asperiores sit provident vel. Doloremque quaerat ad tempora iusto temporibus quod
+                    voluptas soluta vel at aperiam odit in, voluptatum repellendus expedita voluptatibus sit
+                    necessitatibus. Eius qui, dolorum, voluptas eos iste porro animi doloremque beatae velit omnis
+                    facilis illum blanditiis hic atque error assumenda eum autem veritatis quis culpa odio. Rem sint
+                    iure iste reprehenderit fugit ad veritatis corporis ut omnis!</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
